@@ -1,0 +1,80 @@
+const T_inst;
+const T_cumul;
+
+// Reachability
+
+// RESULT(N=2): 0.0
+// RESULT(N=16): 0.0
+R{"rewards1"}=? [ F left_n=left_mx-1 ];
+
+// RESULT(N=2): 1249.9997500087566
+// RESULT(N=16): 156.24999995074435
+R{"rewards2"}=? [ F left_n=left_mx-1 ];
+
+// RESULT(N=2): 1251.1672406031182
+// RESULT(N=16): 157.24789708759093
+R{"rewards3"}=? [ F left_n=left_mx-1 ];
+
+// RESULT(N=2): 6246.133173519441
+// RESULT(N=16): 780.7711377649835
+R{"rewards4"}=? [ F left_n=left_mx-1 ];
+
+// RESULT(N=2): 9994.345323078345
+// RESULT(N=16): 1249.2847093653643
+R{"rewards5"}=? [ F left_n=left_mx-1 ];
+
+// RESULT(N=2): 12505.005748679467
+// RESULT(N=16): 1571.6230250628562
+R{"rewards6"}=? [ F left_n=left_mx-1 ];
+
+// Inst Nonloop
+
+// RESULT(N=2): 2.4809375294597137E-4
+// RESULT(N=16): 0.03004646881140336
+//R{"rewards1"}=? [ I=T_inst ];
+
+// RESULT(N=2): 5.074519024960582
+// RESULT(N=16): 5.601797114690472
+//R{"rewards2"}=? [ I=T_inst ];
+
+// RESULT(N=2): 5.0
+// RESULT(N=16): 5.0
+//R{"rewards3"}=? [ I=T_inst ];
+
+// RESULT(N=2): 24.968897454610666
+// RESULT(N=16): 24.967978498127785
+//R{"rewards4"}=? [ I=T_inst ];
+
+// RESULT(N=2): 39.9525755634955
+// RESULT(N=16): 39.950878155082286
+//R{"rewards5"}=? [ I=T_inst ];
+
+// RESULT(N=2): 49.942474315987795
+// RESULT(N=16): 49.94018217294552
+R{"rewards6"}=? [ I=T_inst ];
+
+// Cumul nonloop
+
+// RESULT(N=2): 0.0864186264356674
+// RESULT(N=16): 10.468281924645458
+R{"rewards1"}=? [ C<=T_cumul ];
+
+// RESULT(N=2): 1776.01131309784
+// RESULT(N=16): 1960.0977873266652
+R{"rewards2"}=? [ C<=T_cumul ];
+
+// RESULT(N=2): 1753.0325750973157
+// RESULT(N=16): 1772.571421871947
+R{"rewards3"}=? [ C<=T_cumul ];
+
+// RESULT(N=2): 8739.143796048429
+// RESULT(N=16): 8738.824387606965
+R{"rewards4"}=? [ C<=T_cumul ];
+
+// RESULT(N=2): 13983.428510213644
+// RESULT(N=16): 13982.840224367597
+R{"rewards5"}=? [ C<=T_cumul ];
+
+// RESULT(N=2): 17510.210335965243
+// RESULT(N=16): 17704.805432798337
+R{"rewards6"}=? [ C<=T_cumul ];
