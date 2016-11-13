@@ -1,0 +1,2 @@
+-const T_inst=50 -const T_cumul=350 -const N=5, L=2
+-const T_inst=50 -const T_cumul=350 -const N=10, L=3
