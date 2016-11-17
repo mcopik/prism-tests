@@ -23,3 +23,8 @@ P=? [ F<=T*5 flag ];
 // RESULT(T=10): 0.49998308926312734
 // RESULT(T=200): 0.4999994807338036
 P=? [ !flag U[4*T, T*5] s=2];
+
+// Some paths will enter deadlock before reaching timebound
+// RESULT(T=10): 0.499999432495322
+// RESULT(T=200): 0.4999994565732998
+P=? [ !flag U >= 3.5*T s=2 ]
